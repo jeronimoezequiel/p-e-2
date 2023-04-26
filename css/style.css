@@ -1,0 +1,245 @@
+/* ------------ google Fonts ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+/* ================ colors CSS variables ================ */
+:root{
+    --white-color: #fff;
+    --dark-color: #222;
+    --body-bg-color: #fff;
+    --section-bg-color: #202834;
+
+    --text-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    --box-shadow: 0 5px 25px rgba(0 0 0 / 20%);
+
+    --scroll-bar-color: #fff;
+    --scroll-thumb-color: #282f4e;
+    --scroll-thumb-hover-color: #454f6b;
+}
+/* ================ reset ================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Alata', sans-serif;
+}
+section{
+    background-color: black;
+}
+/* ================ nav ================ */
+/* ================ header ================ */
+/* ================ main ================ */
+#a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+.titulo-main{
+    position: absolute;
+    left: 9%;
+    top: 90px;
+    color: white;
+}
+/* ================ tarjetas interactivas ================ */
+.container-box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 1rem;
+}
+.box{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    margin: 8px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: scale(0);
+    transition: .8s ease;
+}
+.box:hover .capa{
+    transform: scale(1);
+}
+.control-prev{
+    position: absolute;
+    left: 6%;
+    cursor: pointer;
+}
+.control-next{
+    position: absolute;
+    right: 6%;
+    cursor: pointer;
+}
+/* ================ grids ================ */  
+.container{
+    display: flex;
+    width: 72.1%;
+    height: 200px;
+    padding: 8px;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "tokio  nuevayork seattle maldivas";
+}
+.tokio{
+    font-family: 'Poppins';
+    letter-spacing: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #29323c 0%, #485563 100%);
+    border-radius: 8px;
+}
+.ny{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #29323c 0%, #485563 100%);
+    border-radius: 8px;
+    
+}
+.seattle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #29323c 0%, #485563 100%);
+    border-radius: 8px;
+}
+/* ================ About Us ================ */
+section{
+    position: relative;
+}
+.section{
+    color: var(--white-color);
+    background: black; 
+    padding: 35px 200px;
+    transition: 0.3s ease;
+}
+/* ================ footer ================ */
+
+.footer-menu{
+    height: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+}
+.footer-menu ul li a{
+    display: flex;
+    font-family: 'Poppins';
+    color: black;
+    font-size: .75rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.logo{
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Poppins';
+    letter-spacing: 8px;
+}
+/* Corregir top */
+/* .sublogo{ 
+    font-size: 16px;
+    position: absolute;
+    top: 140%;
+    left: 43.5%;
+    letter-spacing: 8px;
+    margin: 10px;
+    color: black;
+}
+*/
+.icons-copyright{
+    align-items: center;
+    justify-content: center;
+}
+.logo, .icons-copyright{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.copyright{
+    color: grey;
+    font: .75rem;
+    font-family: 'Poppins';
+}
+/* ================ Media Queries ================ */
+@media screen and (max-width: 480px){
+    .tokio{
+     background-image: url(https://i.pinimg.com/564x/fd/c2/f4/fdc2f46b4357c49c87d7393beed8771b.jpg);
+     background-size: cover;
+     background-position: right;
+     } 
+    .ny{
+        background-image: url(https://i.pinimg.com/564x/a6/72/60/a67260a8f271871754d634e18d4f18d0.jpg);
+        background-size: cover;
+        background-position: center;
+        } 
+    .seattle{
+        background-image: url(https://i.pinimg.com/564x/bf/9c/92/bf9c9224467c6378d38741612c9a503d.jpg);
+        background-size: cover;
+        background-position: center;
+        } 
+    .maldivas{
+        background-image: url(https://i.pinimg.com/736x/47/c8/11/47c811380d505dc88b01e26d055f6765.jpg);
+        background-size: cover;
+        background-position: center;
+        } 
+    .sydney{
+        background-image: url(https://i.pinimg.com/564x/2f/ef/a3/2fefa314fe58ab97f847fec69bc175e3.jpg);
+        background-size: cover;
+        background-position: left;
+        } 
+    .chile{
+        background-image: url(https://i.pinimg.com/564x/06/cf/ee/06cfee2c002c11a9720eb5448583f90f.jpg);
+        background-size: cover;
+        background-position: left;
+        } 
+    .brasil{
+        background-image: url(https://i.pinimg.com/564x/0a/86/4e/0a864ed7fc62f955c412c2541251935d.jpg);
+        background-size: cover;
+        background-position: center;
+        } 
+    .argentina{
+        background-image: url(https://i.pinimg.com/564x/70/ef/10/70ef10f8525f5cd130b276bc4a41060a.jpg);
+        background-size: cover;
+        background-position: center;
+        }  
+}
