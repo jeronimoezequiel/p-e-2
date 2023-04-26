@@ -45,6 +45,11 @@ section{
 .titulo-main{
     color: white;
 }
+/* ================ OFFERS ================ */
+.background-section{
+    background-color: black;
+    height: 500px;
+}
 /* ================ tarjetas interactivas ================ */
 .container-box{
     position: relative;
@@ -98,7 +103,7 @@ section{
     right: 6%;
     cursor: pointer;
 }
-/* ================ grids ================ */  
+/* ================ grids (Promociones Exclusivas) ================ */
 .titulo-main{
     position: absolute;
     left: 15%;
@@ -115,7 +120,7 @@ section{
     gap: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "tokio  nuevayork seattle maldivas";
 }
 .tokio{
@@ -131,15 +136,21 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: url(https://media.staticontent.com/media/pictures/716b2ccf-ca9c-4a78-85ca-7a43d9c55787);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
     border-radius: 8px;
-    
+
 }
 .seattle{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: url(../imagenes/photoshop/Descuento\ Europa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
     border-radius: 8px;
 }
 /* ================ About Us ================ */
@@ -148,7 +159,7 @@ section{
 }
 .section{
     color: var(--white-color);
-    background: black; 
+    background: black;
     padding: 35px 200px;
     transition: 0.3s ease;
 }
@@ -156,15 +167,14 @@ section{
     font-family: 'Poppins';
     font-size: 2em;
     font-weight: 600;
- }
+}
  .container-grey{
     display: flex;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
     height: 200px;
     padding: 4px;
-    
- }
- .nosotros{
+}
+.nosotros{
     width: 400px;
     position: static;
     font-size: 14px;
@@ -175,73 +185,65 @@ section{
     top: 8.5%;
     left: 56%;
     color: white;
-    
- }
- .gopro{
+}
+.gopro{
     display: flex;
     position: inherit;
     margin-left: 18%;
     margin-top: 40px;
     max-width: 1000px;
- }
+}
 /* ================ nuevos destinos ================ */
-.gradiente-radial img{
-    width: 200px;
-}
-.estilo-caja{
-    width: 200px;
-    height: 200px;
-    border: #4facfe 2px solid;
-    /* margin: auto; Si pongo esta propiedad de Box modeling, centro las cajas*/
-}
- .container-box2{
-    position: relative;
-    width: 100%;
-    height: 100vh;
+.btn {
+    font-family: 'Poppins';
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 1rem;
- }
-.box2{
-    width: 200px;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    margin: 8px;
-    }
-.box2 img{
-    width: 100%;
-    height: 100%;
-    }
-.capa2{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    top: 225%;
+    left: 77.5%;
+    color: white;
+    border: 1px solid orangered;
+    width: max-content;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+.tarjetitas{
+    justify-content: center;
+    background-color: black;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    justify-content: center;
-    align-items: flex-end;
-    /* transform: scale(0); */
-    /* transition: .8s ease; */
-    }
-
- .box2:hover .capa2{ 
-    transform: scale(1);
-    }
-*/
+    gap: 2rem;
+}
+.tarjetita{
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1px;
+}
+.tarjetita-imagen{
+    background-color: black;
+    width: 300px;
+}
+.tarjetita-imagen-maldivas{
+    width: 300px;
+    height: 375px;
+}
+.tarjetita-imagen-chile{
+    width: 300px;
+    height: 375px;
+}
+.tarjetita-titulo{
+    color: white;
+}
+.tarjetita-texto{
+    font-family: 'Poppins';
+    color: orangered;
+    font-size: 20px;
+}
 /* ================ footer ================ */
-
 .footer-menu{
     height: 20px;
     background-color: white;
@@ -269,7 +271,7 @@ section{
     letter-spacing: 8px;
 }
 /* Corregir top */
-/* .sublogo{ 
+/* .sublogo{
     font-size: 16px;
     position: absolute;
     top: 140%;
@@ -305,40 +307,40 @@ section{
      background-image: url(https://i.pinimg.com/564x/fd/c2/f4/fdc2f46b4357c49c87d7393beed8771b.jpg);
      background-size: cover;
      background-position: right;
-     } 
+     }
     .ny{
         background-image: url(https://i.pinimg.com/564x/a6/72/60/a67260a8f271871754d634e18d4f18d0.jpg);
         background-size: cover;
         background-position: center;
-        } 
+        }
     .seattle{
         background-image: url(https://i.pinimg.com/564x/bf/9c/92/bf9c9224467c6378d38741612c9a503d.jpg);
         background-size: cover;
         background-position: center;
-        } 
+        }
     .maldivas{
         background-image: url(https://i.pinimg.com/736x/47/c8/11/47c811380d505dc88b01e26d055f6765.jpg);
         background-size: cover;
         background-position: center;
-        } 
+        }
     .sydney{
         background-image: url(https://i.pinimg.com/564x/2f/ef/a3/2fefa314fe58ab97f847fec69bc175e3.jpg);
         background-size: cover;
         background-position: left;
-        } 
+        }
     .chile{
         background-image: url(https://i.pinimg.com/564x/06/cf/ee/06cfee2c002c11a9720eb5448583f90f.jpg);
         background-size: cover;
         background-position: left;
-        } 
+        }
     .brasil{
         background-image: url(https://i.pinimg.com/564x/0a/86/4e/0a864ed7fc62f955c412c2541251935d.jpg);
         background-size: cover;
         background-position: center;
-        } 
+        }
     .argentina{
         background-image: url(https://i.pinimg.com/564x/70/ef/10/70ef10f8525f5cd130b276bc4a41060a.jpg);
         background-size: cover;
         background-position: center;
-        }  
+        }
 }
