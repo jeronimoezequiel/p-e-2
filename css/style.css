@@ -153,6 +153,79 @@
 .weather--icon{
     color: orangered;
 }
+ /* Fondo del header  */
+.header__background{
+    background-image: url(../imagenes/photoshop/llao__llao__A.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.titulo-1{
+    font-family: 'Poppins';
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.subtitle{ 
+    position: absolute;
+    top: 37.6%;
+    left: 33%;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 300;
+    color: whitesmoke;
+}
+.parrafo{
+    position: absolute;
+    font-size: 15px;
+    top: 44%;
+    left: 10.1%;
+    right: 40px;
+    max-width: 500px;
+    color: whitesmoke;
+    background:  rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    text-shadow: rgba(255, 255, 255, 0.1);
+    padding: 14px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.read-btn{
+    position: absolute;
+    left: 10.1%;
+    top: 62.8%;
+    border: none;
+    outline: none;
+    background: orange;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* ============ Media icons ============*/
+.media-icons{
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    top: 103%;
+    transform: translateY(-174%);
+    margin-left: 40px;
+}
+.media-icons a{
+    color: white;
+    font-size: 1.3em;
+    margin: 10px;
+}
 /* ------------ Main (sections ------------ */
 #a{
     text-decoration: none;
@@ -193,7 +266,7 @@
 }
 /* ================ tarjetas interactivas ================ */
 .container-box{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -282,17 +355,18 @@
 }
 .tarjetita-imagen{
     width: 300px;
-    border: black 2px solid;
+    border: black 1.8px solid;
+    height: 375px;
 }
 .tarjetita-imagen-maldivas{
     width: 300px;
     height: 375px;
-    border: black 2px solid;
+    border: black 1.8px solid;
 }
 .tarjetita-imagen-chile{
     width: 300px;
     height: 375px;
-    border: black 2px solid;
+    border: black 1.8px solid;
 }
 .tarjetita-titulo{
     font-family: 'Poppins';
