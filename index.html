@@ -15,10 +15,85 @@
 </head>
 <body>
     <header>
+        <div class="background-nav">
 
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ancho-restringido">
+              <a class="navbar-brand typo-titulo" href="#">ICE LAND</a>
+              <div class="">
+                <a class="navbar-brand typo-titulo2" href="#">adventures</a>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+            <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link typo-navegable" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link typo-navegable" href="#">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link typo-navegable" href="#">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link typo-navegable" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link typo-navegable" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link typo-navegable" href="#">Contacto</a>
+                  </li>
+                  <!-- Search button -->
+                  <div class="container">
+                    <input placeholder="Type to search..." required="" class="input" name="text" type="text">
+                    <div class="icon">
+                        <svg viewBox="0 0 512 512" class="ionicon" xmlns="http://www.w3.org/2000/svg">
+                            <title>Search</title>
+                            <path stroke-width="32" stroke-miterlimit="10" stroke="currentColor" fill="none" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+                            <path d="M338.29 338.29L448 448" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke="currentColor" fill="none"></path>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Weather dropdown -->
+                <li class="nav-item dropdown typo-subtitulo-weather">
+                    <a
+                      class="nav-link dropdown-toggle typo-navegable" 
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                    Weather <i class="uil uil-snowflake weather--icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item typo-navegable typo-subtitulo" href="#">Buenos Aires</a></li>
+                        <li><a class="dropdown-item typo-navegable typo-subtitulo" href="#">Tokio</a></li>
+                        <li><a class="dropdown-item typo-navegable typo-subtitulo" href="#">Indonesia</a>
+                        <li><a class="dropdown-item typo-navegable typo-subtitulo" href="#">Sydney</a>
+                        <li><a class="dropdown-item typo-navegable typo-subtitulo" href="#">Ver más...</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        
     </header>
-            <main>
-                
+    <main>
             <!-- section A "Explora Lugares" -->
                 <!-- ================ tarjetas interactivas ================ */ -->
                 <section>
@@ -61,7 +136,7 @@
                             <div class="control-next"><i class="bi bi-arrow-right-circle-fill control-next"></i></div>
                         </div>
                     </div>
-                </section> 
+                </section>
             <!-- section B "Nuevos destinos" -->
                 <section>
                     <div class="background-sectionw">
@@ -87,15 +162,17 @@
                                 <p class="tarjetita-texto">$839.154,00</p>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </section>
             <!-- section C "Destino destacado" -->
                 <section>
                     <div class="background-section-C">
                         <div>
                             <h2 class="titulo-mainw-d">Destinos Destacados</h2>
+                            <a class="leer-mas-w" href="#">Ver Paquetes</a>
+                            <a class="leer-mas-2-w" href="#">Pasaporte Ice</a>
                         </div>
-                        <div class="container">
+                        <div class="container-destino">
                             <div class="venecia"><a href="#" id="aw">Venecia</a></div>
                             <div class="nuevayork"><a href="#" id="aw">Nueva York</a></div>
                             <div class="marruecos"><a href="#" id="aw">Marruecos</a></div>
@@ -113,29 +190,38 @@
                             <div class="caja caja4"><a href="#" id="ag">caja4</a></div>
                         </div>
                     </div>
-                </section>          
+                </section>
             <!-- section D "Sobre Nosotros" -->
-                <section class="about section">
-                    <h2>Sobre Nosotros</h2>
-                    <p class="nosotros container-grey">Creamos una experiencia de viaje al proporcionar nuestro plan turistico que mejor se adapte a vos!</p>
-                    <iframe class="gopro" width="760" height="400" src="https://www.youtube.com/embed/vlDzYIIOYmM?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
-                    <div class="gradiente-lineal">
-                    </div>                 
+                <section class="sectiond"></div>
+                <div>
+                    <h2 class="sobre-nosotros">Sobre Nosotros</h2>
+                    <p class="nosotros">Creamos una experiencia de viaje al proporcionar nuestro plan turistico que mejor se adapte a vos!</p>
+                    <a class="leer-mas-w-sn" href="#">Experiencias</a>
+                    <a class="leer-mas-2-w-sn" href="#">Pasaporte Ice</a>
+                </div>
+                 <div> 
+                    <iframe class="gopro" width="760" height="400" src="https://www.youtube.com/embed/vlDzYIIOYmM?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h4 class="exppro">Experiencia IceLand by </h4>
+                <img class="gopro-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/GoPro_logo.svg/1200px-GoPro_logo.svg.png" alt="">
                </section>
+               <section class="section__politic">
+                <p class="section__politic--parrafo">
+                    1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an IceLand Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an IceLand Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. IceLand or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from IceLand's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.
+                    To access and use all the features of IceLand Card, you must add IceLand Card to Wallet on an display desktop or mobile. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.
+                    Available for qualifying applicants in the United States.
+                    IceLand Card is issued by JeronimoNuñez Arg., La Plata.
+                </p>
+               </div>
+            
             </main>
             <!-- ================ footer ================ */ -->
-            <section class="about section background-section-f">
-                        <p class="pc">1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an IceLand Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an IceLand Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements.
-                        IceLand adventures trademarks and copyrights are used with permission of Jeronimo E. Nuñez, L.P. All rights reserved.</p>
-                    </div>
-                </div>
-                </section>
             <footer>
                 <hr class="hr">
                 <div class="footer-menu">
                     <div>
                         <h2 class="logo">ICE LAND</h2>
-                        <h5 class="sublogo">adventures</h5>  
+                        <h5 class="sublogo">adventures</h5>
                     </div>
                 </div>
                 <div>
@@ -156,8 +242,6 @@
                   </div>
                   <p class="copyright">© 2023 JeronimoNuñez. All rights reserved.</p>
                 </div>
-                
-                
               </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
