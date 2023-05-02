@@ -1351,12 +1351,96 @@ ul{
   .button--submit:hover {
     background-color: orangered;
   }
-  
   .input:focus, .input:focus-visible {
     border-color: red;
     outline: none;
   } 
 
+
+/* DESTINOS */
+/* grid introd. */
+.grid_america{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "caja1 caja2 caja3 caja4"
+    "caja5 caja6 caja7 caja8";
+}
+.caja1--grid_america{
+    margin-top:13.3%;
+    grid-area: caja1;
+    background-image: url(https://images.unsplash.com/photo-1500759285222-a95626b934cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.caja2--grid_america{
+    margin-top:13.3%;
+    grid-area: caja2;
+    background-image: url(https://images.unsplash.com/photo-1589837391857-2ce9dd7e868a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.caja3--grid_america{
+    margin-top:13.3%;
+    grid-area: caja3;
+    background-image: url(https://images.unsplash.com/photo-1631554203859-4322c35d1bdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.caja4--grid_america{
+    margin-top: 13.3%;
+    grid-area: caja4;
+    background-image: url(https://images.unsplash.com/photo-1597787450633-6c1e7aa7218a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.caja5--grid_america{
+    grid-area: caja5;
+    background-image: url(https://images.unsplash.com/photo-1597086831879-756db15e81d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.caja6--grid_america{
+    grid-area: caja6;
+    background-image: url(https://images.unsplash.com/photo-1483457138838-b9411a2dbebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.caja7--grid_america{
+    grid-area: caja7;
+    background-image: url(https://images.unsplash.com/photo-1483457138838-b9411a2dbebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.caja8--grid_america{
+    grid-area: caja8;
+    background-image: url(https://images.unsplash.com/photo-1483457138838-b9411a2dbebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.america-background{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+.america-title{
+    font-family: 'Poppins'; 
+    color: white;
+     position: absolute; 
+     margin-left: 37%; 
+     margin-top: 6%; 
+     font-size: 2.8em; 
+     font-weight: 500; 
+}
+.tarjetas_destino{
+    text-decoration: none;
+}
 
 /*------------ section E ("Paquetes exclusivos") ------------ */
 /*
